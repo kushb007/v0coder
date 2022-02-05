@@ -1,6 +1,6 @@
 from flask import render_template, flash, redirect, url_for, jsonify, session
-from bemo import app, db
-from bemo.models import User, Blocks
+from v0coderapp import app, db
+from v0coderapp.models import User, Block
 
 blocks = [
   

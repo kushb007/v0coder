@@ -1,5 +1,5 @@
 from datetime import datetime
-from bemo import db
+from v0coderapp import db
 
 
 class User(db.Model):

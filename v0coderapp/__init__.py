@@ -9,4 +9,4 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
 oauth = OAuth(app)
 
-from bemo import routes
+from v0coderapp import routes
