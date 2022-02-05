@@ -1,0 +1,9 @@
+{%extends "layout.html"%}
+{%block content%}
+    <img class="avatar" src="{{userinfo['picture']}}"/>
+    <img class="avatar" src="{{pfp}}"/>
+    <h1>{{pfp}}</h1>
+    <h2>Welcome {{userinfo['name']}}</h2>
+    <pre>{{userinfo_pretty}}</pre>
+    <a class="btn btn-primary btn-lg btn-logout btn-block" href="/logout">Logout</a>
+{%endblock content%}
