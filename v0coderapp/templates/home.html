@@ -3,4 +3,11 @@
 	{%for block in blocks%}
 	<h1>{{block.title}}</h1>
 	{%endfor%}
+	<h3>{{utc_dt}}</h3>
+	<div id="react"></div>
+	<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <div id="react-root"></div>
+  <script src="{{ url_for('static', filename='dist/bundle.js') }}"></script>
 {% endblock content %}
