@@ -4,10 +4,24 @@
 	<h1>{{block.title}}</h1>
 	{%endfor%}
 	<h3>{{utc_dt}}</h3>
+	<div class="panel panel-info">
+		<p>V0coder is a tool to allow you to customize interactive state-of-the-art graphs and charts of your choice of data, out loud.</p>
+	</div>
+	<div id="vis"></div>
 	<div id="react"></div>
 	<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
   <div id="react-root"></div>
   <script src="{{ url_for('static', filename='dist/bundle.js') }}"></script>
+  <form action="/" method="post">
+    <input type="text" name="animal" placeholder="Enter an animal" required />
+    <input type="submit" value="Generate names" />
+    {% if result %}
+  	<div class="result">{{ result }}</div>
+  	{% endif %}
+  </form>
 {% endblock content %}

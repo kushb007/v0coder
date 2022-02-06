@@ -1,20 +1,5 @@
 {
-  "name": "v0coder",
-  "version": "1.0.0",
-  "description": "ora ora ora or",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kushb007/v0coder.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kushb007/v0coder/issues"
-  },
-  "homepage": "https://github.com/kushb007/v0coder#readme"
+  "dependencies": {
+    "openai": "^2.0.2"
+  }
 }

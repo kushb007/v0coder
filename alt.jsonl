@@ -1,0 +1,6 @@
+{"text": "good film, but very glum.", "label": "0", "metadata": {"source":"example.com"}}
+{"text": "i sympathize with the plight of these families, but the movie doesn't do a very good job conveying the issue at hand.", "label": "1", "metadata": {"source":"example.com"}}
+{"text": "ympathize with the plight of these families, but the movie doesn't do a very good job conveying the issue at hand.", "label": "2", "metadata": {"source":"example.com"}}
+{"text": "i sympathize with the plight of these families, but the movie doesn't do a very good job conveying  issue at hand.", "label": "3", "metadata": {"source":"example.com"}}
+{"text": "i sympathize with the plight of these families, but the movie doesn't do a very good job conveying the  at hand.", "label": "4", "metadata": {"source":"example.com"}}
+{"text": "i sympathize with the plight of these families, but the movie doesn't do a very good job conveying the.", "label": "5", "metadata": {"source":"example.com"}}
