@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block content %}
+	{%for block in blocks%}
+	<h1>{{block.title}}</h1>
+	{%endfor%}
+{% endblock content %}
