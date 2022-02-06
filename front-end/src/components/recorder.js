@@ -1,5 +1,6 @@
 
 import axios from "axios";
+import FileSaver from 'file-saver';
 
 let gumStream = null;
 let recorder = null;
@@ -38,9 +39,11 @@ function RecorderJSDemo() {
     }
 
     const stopRecording = () => {
+        
         console.log("stopButton clicked");
-
         recorder.stop(); //stop microphone access
+        
+        console.log("stopButton clicked");
         gumStream.getAudioTracks()[0].stop();
 
         recorder.exportWAV(onStop);
@@ -48,7 +51,7 @@ function RecorderJSDemo() {
 
     const onStop = (blob) => {
         console.log("uploading...");
-
+        FileSaver.saveAs(blob, 'soundFile.wav');
         let data = new FormData();
 
         data.append('text', "this is the transcription of the audio file");
